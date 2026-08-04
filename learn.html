@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBG Learn - Belajar Online Tanpa Pusing!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white;">
+        <div class="container">
+             <a class="navbar-brand" href="#">
+                <img src="assets/gambar/Logo_MBG.png" alt="Bootstrap" width="50" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="learn.html">Learn</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="#">Contact</a>
+                </li>
+                 <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="#">About us</a>
+                </li>
+                        
+                
+            </ul>
+           
+            </div>
+        </div>
+    </nav>
+    <!-- Konten -->
+    <div class="container mt-4">
+        
+       <!-- BAGIAN 1: KARTU STRUKTUR DATA MAJEMUK -->
+        <h2 class="text-center fw-bold mb-5 text-dark">Struktur Data Majemuk</h2>
+        
+        <div class="row g-4 mb-5">
+            <!-- Kartu Array -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                    <h3 class="fw-bold text-dark">Array</h3>
+                    <hr class="my-3 opacity-25" style="width: 70%;">
+                    <p class="text-secondary small leading-relaxed mb-4">
+                        Array ( larik ) adalah sekumpulan element berindeks, dimana setiap elemennya memiliki tipe data yang sama di dalam satu variabel tunggal. Tujuan penggunaan array adalah untuk menyederhanakan pengumpulan sebuah data.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="belajar-array.html" class="btn btn-warna text-white rounded-pill px-4 py-2">Belajar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kartu Stack -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                    <h3 class="fw-bold text-dark">Stack</h3>
+                    <hr class="my-3 opacity-25" style="width: 70%;">
+                    <p class="text-secondary small leading-relaxed mb-4">
+                        Stack adalah struktur data yang menggunakan pengurutan LIFO (Last-In-First-Out) yang artinya element yang terakhir masuk akan menjadi elemen yang pertama keluar.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="belajar-stack.html" class="btn btn-warna text-white rounded-pill px-4 py-2">Belajar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BAGIAN 2: TABEL ARRAY VS STACK -->
+        <h2 class="text-center fw-bold my-5 text-dark">Array vs Stack</h2>
+
+        <div class="table-responsive">
+            <table class="table table-bordered border-dark align-middle mb-0 bg-white" style="border-width: 1.5px;">
+                <thead>
+                    <tr class="text-center text-white" style="background-color: #4c73bf;">
+                        <th class="py-2 px-3 tabel-bg">Fitur / Parameter</th>
+                        <th class="py-2 px-3 tabel-bg">Array</th>
+                        <th class="py-2 px-3 tabel-bg">Stack</th>
+                    </tr>
+                </thead>
+                <tbody class="fw-semibold text-dark">
+                    <tr>
+                        <td class="fw-bold px-3">Prinsip Kerja</td>
+                        <td class="px-3">Akses Acak (Indeks)</td>
+                        <td class="px-3">Last-In First-Out (LIFO)</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold px-3">Pengaksesan Data</td>
+                        <td class="px-3">Bebas pilih posisi indeks</td>
+                        <td class="px-3">Hanya elemen teratas (Top/Peek)</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold px-3">Penambahan Data</td>
+                        <td class="px-3">append() / Insert di indeks</td>
+                        <td class="px-3">push() di posisi teratas</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold px-3">Penghapusan Data</td>
+                        <td class="px-3">pop() / Delete di indeks</td>
+                        <td class="px-3">pop() dari posisi teratas</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold px-3">Cek Kondisi & Ukuran</td>
+                        <td class="px-3">len(array)</td>
+                        <td class="px-3">isEmpty() & size()</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold px-3">Analogi Kehidupan</td>
+                        <td class="px-3">Rak Sepatu Ber-indeks Nomor</td>
+                        <td class="px-3">Tumpukan Buku / Piring</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold px-3">Contoh Penggunaan</td>
+                        <td class="px-3">Daftar Kontak / Tabel Data</td>
+                        <td class="px-3">Fitur Undo-Redo / Browser History</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    
+    </div> <!-- end konten -->    
+    <!-- bagian footer -->
+    <footer class="text-white footer-bg text-center py-3 mt-4">
+        <p class="mb-0 small">©2026 Build with ♥ by MBG team</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

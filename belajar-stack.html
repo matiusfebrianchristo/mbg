@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Belajar Stack - Belajar Online Tanpa Pusing!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white;">
+        <div class="container">
+             <a class="navbar-brand" href="#">
+                <img src="assets/gambar/Logo_MBG.png" alt="Bootstrap" width="50" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="learn.html">Learn</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="#">Contact</a>
+                </li>
+                 <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="#">About us</a>
+                </li>
+                        
+                
+            </ul>
+           
+            </div>
+        </div>
+    </nav>
+    <!-- MAIN konten -->
+    <main class="container py-5">
+
+        <!-- KARTU 1: Array List Intro -->
+        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 bg-white">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <h1 class="fw-bold text-dark mb-4">Stack</h1>
+                   <div class="text-secondary leading-relaxed">
+                        <p class="mb-4">
+                            <strong>Stack</strong> adalah struktur data yang menggunakan pengurutan <strong>LIFO (Last-In-First-Out)</strong> 
+                            yang artinya element yang terakhir masuk akan menjadi elemen yang pertama keluar. 
+                            Seperti halnya tumpukan sebuah buku, dimana buku yang terakhir ditumpuk (top) akan 
+                            menjadi buku yang pertama kali dikeluarkan. Ada beberapa operasi dasar dalam stack antara lain :
+                        </p>
+
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <strong>•Push &nbsp;:</strong> menambahkan data pada puncak stack
+                            </li>
+                            <li class="mb-2">
+                                <strong>•Pop &nbsp;&nbsp;&nbsp;:</strong> menghapus data pada puncak stack
+                            </li>
+                            <li class="mb-2">
+                                <strong>•Top/Peek :</strong> untuk mengetahui data paling atas pada stack
+                            </li>
+                            <li class="mb-2">
+                                <strong>•isEmpty &nbsp;:</strong> untuk mengetahui apakah stack kosong atau tidak
+                            </li>
+                            <li>
+                                <strong>•Size &nbsp;:</strong> untuk mengetahui jumlah data di dalam stack
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">                    
+                    <img src="assets/gambar/ilustrasi.png" class="img-fluid rounded-3" alt="Ilustrasi">
+                </div>
+            </div>
+        </div>
+
+        <!-- SEKSI 2: Contoh Kode & Penjelasan -->
+        <div class="d-flex flex-column gap-5 mb-5">
+            
+            <!-- Dummy Gambar Kode 1 -->
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5">                   
+                    <img src="assets/konten/stack/image 1.png" class="img-fluid rounded-3 shadow-sm" alt="Code 1">
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-secondary leading-relaxed">
+                        <p class="mb-4">
+                            Sebagai gambaran praktis, bayangkan kita memiliki tiga buah buku dengan urutan tertentu, yaitu Buku Sejarah, Buku IPA, dan Buku Matematika. Ketika ketiga buku ini dimasukkan (push) secara berurutan ke dalam sebuah stack, maka Buku Matematika akan menjadi buku yang berada di posisi paling atas (top).
+                        </p>
+
+                        <p class="mb-3">
+                            Berdasarkan gambar kode pemrograman di samping, berikut adalah bagaimana fungsi dan operasi dasar stack dijalankan secara praktis:
+                        </p>
+
+                        <ul class="mb-0 ps-3">
+                            <li class="mb-2">
+                                <strong>Pop:</strong> Menghapus atau mengambil elemen yang berada di posisi paling atas, yang mana elemen tersebut adalah Buku Matematika.
+                            </li>
+                            <li class="mb-2">
+                                <strong>Top/Peek:</strong> Melihat nilai elemen teratas tanpa menghapusnya, elemen tersebut adalah Buku Matematika.
+                            </li>
+                            <li>
+                                <strong>Pemeriksaan:</strong> Mengecek kondisi tumpukan apakah sedang kosong (isEmpty) atau melihat total data (size).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+
+        </div>
+
+        <!-- KARTU 3: Video Tutorial -->
+        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold text-dark mb-4">Video Tutorial</h2>
+                    <p class="text-secondary fw-semibold mb-3">Masih bingung dengan Stack?</p>
+                    <p class="text-secondary leading-relaxed mb-0">
+                        Pelajari konsep dasar Stack secara visual melalui video tutorial ini. Kamu akan melihat simulasi langsung bagaimana data ditambahkan, diakses, dan dihapus langkah demi langkah.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/SOWgfboxht4"
+                        title="YouTube video player"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </main> 
+    <!-- bagian footer -->
+    <footer class="text-white footer-bg text-center py-3 mt-4">
+        <p class="mb-0 small">©2026 Build with ♥ by MBG team</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

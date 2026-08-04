@@ -1,0 +1,43 @@
+/* 1. Definisikan font */
+@font-face {
+    font-family: 'Poppins'; /* Bebas beri nama */
+    src: url('../../assets/font/Poppins-Medium.ttf');
+}
+
+/* 2. Terapkan font ke elemen */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #e2e2e2e2;
+}
+
+.active{
+    background-color: #CADEFD;
+    border-radius: 10px;
+}
+
+.kontak-title{
+    text-align: center;
+}
+
+.tabel-bg{
+    color:white !important;
+    width: 30% !important; 
+    background-color: #4c73bf !important;
+}
+
+.btn-warna{
+    background-color: #4c73bf;
+}
+
+.btn-warna:hover{
+    background-color: #2f487b;
+}
+
+
+
+.footer-bg{
+    background-color: #1e4b8f;
+}
