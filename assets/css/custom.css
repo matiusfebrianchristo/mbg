@@ -1,22 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+
 /* 1. Definisikan font */
 @font-face {
-    font-family: 'Poppins'; /* Bebas beri nama */
+    font-family: 'Poppins'; Bebas beri nama
     src: url('../../assets/font/Poppins-Medium.ttf');
 }
 
 /* 2. Terapkan font ke elemen */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #F2F6F8;
 }
 
-body{
-    background-color: #e2e2e2e2;
+nav {
+    position: sticky!important;
+    top: 0;
+    z-index: 1000!important;
 }
 
-.active{
+nav li a{
+    font-weight: bold!important;
+    color: #1F2937!important;
+    padding: 10px 20px!important;
+    font-size: 15px!important;
+}
+
+nav li:hover{
     background-color: #CADEFD;
     border-radius: 10px;
 }
+
+.text-dark {
+    color: #1E1E1E!important;
+}
+
+.text-darker {
+    color: #090814!important;
+}
+.font-15 {
+    font-size: 15px!important;
+}
+
+.text-gray {
+    color: #374151!important;
+}
+
+.text-small {
+    font-size: 15px!important;
+}
+
+.btn-submit {
+    background-color: #4D74BB;
+    font-size: 15px!important;
+    font-weight: 600!important;
+    latter-spacing: 5px!important;
+    width: 147px!important;
+    text-align: center!important;
+}
+
+.text-extra-bold {
+    font-weight: 800!important;
+    height: 40px!important;
+    overflow: hidden!important;
+}
+
+.btn-submit:hover {
+    background-color: #2d5296;
+}
+
+.indent {
+    text-indent: 2em!important;
+    text-align: justify!important;
+}
+
+#home {
+    min-height: 100vh!important;
+    padding: 0 45px!important;
+}
+
+#home .card-body .card-title{
+    height: 40px;
+    font-size: 30px!important;
+    font-weight: 800!important;
+    overflow: hidden;
+}
+
+
+
+#home .card-body .card-text{
+    font-size: 15px!important;
+    font-weight: 500!important;
+    width: 85%!important;
+}
+
+#reason {
+    background-color: #ffffff;
+    min-height: 100vh!important;
+    padding: 0 45px!important;
+}
+
+#reason h3 {
+    height: 40px;
+    font-size: 30px!important;
+    font-weight: 800!important;
+    overflow: hidden;
+}
+
+#reason p, #reason li {
+    color: #374151!important;
+    font-size: 20px!important;
+}
+
+#reason .content{
+    margin-left: 1rem!important;
+}
+
+#kontak {
+    min-height: 100vh!important;
+    /* padding: 0 45px!important; */
+    background-color: #F2F6F8;
+}
+
+#kontak h3 {
+    height: 40px;
+    font-size: 30px!important;
+    font-weight: 800!important;
+    overflow: hidden;
+}
+
+#kontak .form-contact  {
+    background-color: #EAEAEA;
+}
+
+#kontak .form-contact input::placeholder, #kontak .form-contact textarea::placeholder {
+    font-size: 15px!important;
+    color: rgba(95, 95, 95, 0.5)!important;
+}
+
+#kontak .form-contact input, #kontak .form-contact textarea {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px!important;
+    color: #5F5F5F!important;
+}
+
+#about {
+    min-height: 100vh!important;
+    padding: 0 45px!important;
+    background-color: #F2F6F8;
+}
+
+#about h2 {
+    font-size: 30px!important;
+    color: #1E1E1E!important;
+}
+
+#about .title-team{  
+    padding-top: 5rem!important;
+}
+
+#about .anggota-tim img{
+    max-width: 253px!important;
+    max-height: 253px!important;
+}
+
+#about .anggota-tim .identitas{
+    font-size: 12px!important;
+    font-weight: 500!important;
+}
+
+
+
+
+/* PAGE LEARN */
+#learn {
+    min-height: 100vh!important;
+    background-color: #F2F6F8;
+}
+
+#learn .paragrah-learn {
+    max-width: 563px!important;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+#learn .btn-learn {
+    background-color: #4D74BB;
+    font-size: 15px!important;
+    font-weight: 600!important;
+    line-height: auto!important;
+    width: 187px!important;
+    text-align: center!important;
+}
+
+#learn .btn-learn:hover {
+    background-color: #2f487b;
+}
+
+#difference {
+    min-height: 100vh!important;
+    background-color: #fff;
+}
+
+#array-list h1, #stack-list h1 {
+    min-height: 70px!important;
+}
+
+
+
+.btn-start-now {
+    font-size: 15px!important;
+    font-weight: 600!important;
+}
+
 
 .kontak-title{
     text-align: center;
@@ -36,7 +240,9 @@ body{
     background-color: #2f487b;
 }
 
-
+footer {
+    min-height: 77px;
+}
 
 .footer-bg{
     background-color: #1e4b8f;

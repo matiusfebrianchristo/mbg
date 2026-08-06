@@ -10,118 +10,133 @@
 
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white;">
-        <div class="container">
-             <a class="navbar-brand" href="#">
-                <img src="assets/gambar/Logo_MBG.png" alt="Bootstrap" width="50" height="44">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="learn.html">Learn</a>
-                </li>
-                <li class="nav-item">
-                     <a class="nav-link" aria-current="page" href="index.html#kontak">Contact</a>
-                </li>
-                 <li class="nav-item">
-                     <a class="nav-link" aria-current="page" href="index.html#tim">About us</a>
-                </li>
-                        
-                
-            </ul>
-           
-            </div>
-        </div>
-    </nav>
-    <!-- MAIN konten -->
-    <main class="container py-5">
 
-        <!-- KARTU 1: Array List Intro -->
-        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 bg-white">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-7">
-                    <h1 class="fw-bold text-dark mb-4">Array List</h1>
-                    <p class="text-secondary leading-relaxed mb-4">
-                        Array ( larik ) adalah sekumpulan elemen berindeks, di mana setiap elemennya memiliki tipe data yang sama di dalam satu variabel tunggal. Tujuan penggunaan array adalah untuk menyederhanakan pengumpulan sebuah data. Seperti halnya rak sepatu, kita bisa mengisi rak tersebut dengan sebuah sepatu dan bisa mengambil sepatu tertentu berdasarkan posisinya. Adapun konsep array sebagai berikut:
-                    </p>
-                    <ul class="list-unstyled text-secondary mb-0">
-                        <li class="mb-2"><strong>•Tipe Data Seragam :</strong> semua yang tersimpan pada satu array harus memiliki tipe data yang sama. Misalkan berupa angka atau teks saja.</li>
-                        <li class="mb-2"><strong>•Indeks:</strong> Indeks digunakan sebagai penanda posisi setiap data yang tersimpan di dalam sebuah array. Indeks ini selalu dimulai dari angka 0.</li>
-                        <li><strong>•Akses acak (random access) :</strong> Data dapat dibaca, diubah, dan dicari hanya dengan memanggil indeks dari data tersebut.</li>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white!important;">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/gambar/Logo_MBG.png" alt="Bootstrap" width="50" height="44">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="learn.html">Learn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#kontak">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#about">About us</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-lg-5 text-center">                    
-                    <img src="assets/gambar/ilustrasi.png" class="img-fluid rounded-3" alt="Ilustrasi">
+            </div>
+        </nav>
+
+
+
+
+    <!-- MAIN konten -->
+    <main>
+
+        <!-- Array List Intro -->
+        <div class="mt-5 py-5 mx-md-5 mx-2 min-vh-100" id="array-list">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 bg-white">
+                <div class="row align-items-center g-4 px-3">
+                    <div class="col-lg-7">
+                        <h1 class="text-extra-bold text-darker mb-3">Array List</h1>
+                        <p class="text-gray leading-relaxed mb-4 indent">
+                            <strong>Array ( larik )</strong> adalah sekumpulan elemen berindeks, di mana setiap elemennya memiliki tipe data yang sama di dalam satu variabel tunggal. Tujuan penggunaan array adalah untuk menyederhanakan pengumpulan sebuah data. Seperti halnya rak sepatu, kita bisa mengisi rak tersebut dengan sebuah sepatu dan bisa mengambil sepatu tertentu berdasarkan posisinya. Adapun konsep array sebagai berikut:
+                        </p>
+                        <ul class="list-unstyled text-gray mb-0">
+                            <li class="mb-2"><strong>• Tipe Data Seragam :</strong> semua yang tersimpan pada satu array harus memiliki tipe data yang sama. Misalkan berupa angka atau teks saja.</li>
+                            <li class="mb-2"><strong>• Indeks:</strong> Indeks digunakan sebagai penanda posisi setiap data yang tersimpan di dalam sebuah array. Indeks ini selalu dimulai dari angka 0.</li>
+                            <li><strong>• Akses acak (random access) :</strong> Data dapat dibaca, diubah, dan dicari hanya dengan memanggil indeks dari data tersebut.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 text-center">                    
+                        <img src="assets/gambar/ilustrasi.svg" class="img-fluid rounded-3" style="height: 339px;" alt="Ilustrasi">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- SEKSI 2: Contoh Kode & Penjelasan -->
-        <div class="d-flex flex-column gap-5 mb-5">
-            
-            <!-- Dummy Gambar Kode 1 -->
-            <div class="row align-items-center g-4">
-                <div class="col-lg-5">                   
-                    <img src="assets/konten/array/image 1.png" class="img-fluid rounded-3 shadow-sm" alt="Code 1">
+        <!-- Contoh Kode & Penjelasan -->
+        <div id="penjelasan-array" class="bg-white min-vh-100 py-5">
+            <div class="d-flex flex-column gap-4 mb-5 mx-5 my-5">
+                
+                <!-- Dummy Gambar Kode 1 -->
+                <div class="row align-items-center g-4 mt-5 mb-4">
+                    <div class="col-lg-5">                   
+                        <img src="assets/konten/array/image 1.png" class="img-fluid rounded-3 shadow-sm" alt="Code 1">
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="text-gray leading-relaxed mb-0">
+                            Misalkan kita memiliki sebuah array list yang berisi nama-nama buah. Contoh disini adalah "banana", "apple", dan "orange". Kita mencoba untuk membuat array dengan Bahasa pemrograman <strong>Python</strong>. Indeks array dimulai dari angka 0. Untuk mengambil data tertentu dalam sebuah array, kita bisa gunakan fungsi print() dalam python dengan memanggil variable array diikuti dengan indeks mana yang mau diambil.<br>
+                            Contoh : print(var_name[index])
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-7">
-                    <p class="text-secondary leading-relaxed mb-0">
-                        Misalkan kita memiliki sebuah array list yang berisi nama-nama buah. Contoh disini adalah "banana", "apple", dan "orange". Kita mencoba untuk membuat array dengan Bahasa pemrograman <strong>Python</strong>. Indeks array dimulai dari angka 0. Untuk mengambil data tertentu dalam sebuah array, kita bisa gunakan fungsi print() dalam python dengan memanggil variable array diikuti dengan indeks mana yang mau diambil.<br>
-                        Contoh : print(var_name[index])
-                    </p>
+    
+                <!-- Dummy Gambar Kode 2 -->
+                <div class="row align-items-center g-4 mt-5x">
+                    <div class="col-lg-5">
+                       <img src="assets/konten/array/image 2.png" class="img-fluid rounded-3 shadow-sm" alt="Code 2">
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="text-gray leading-relaxed mb-0">
+                            Untuk mengambil seluruh data dalam array, kita perlu menggunakan perulangan untuk mengeluarkan data satu per satu. Kita dapat menambahkan, menghapus dan mengubah isi data pada array. Untuk menambahkan data menggunakan fungsi <code>append()</code> dan menginput data yang akan ditambahkan ke dalam parameter dan <code>pop()</code> untuk menghapus nilai di dalam list array.
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Dummy Gambar Kode 2 -->
-            <div class="row align-items-center g-4">
-                <div class="col-lg-5">
-                   <img src="assets/konten/array/image 2.png" class="img-fluid rounded-3 shadow-sm" alt="Code 2">
-                </div>
-                <div class="col-lg-7">
-                    <p class="text-secondary leading-relaxed mb-0">
-                        Untuk mengambil seluruh data dalam array, kita perlu menggunakan perulangan untuk mengeluarkan data satu per satu. Kita dapat menambahkan, menghapus dan mengubah isi data pada array. Untuk menambahkan data menggunakan fungsi <code>append()</code> dan menginput data yang akan ditambahkan ke dalam parameter dan <code>pop()</code> untuk menghapus nilai di dalam list array.
-                    </p>
-                </div>
-            </div>
-
         </div>
 
-        <!-- KARTU 3: Video Tutorial -->
-        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-6">
-                    <h2 class="fw-bold text-dark mb-4">Video Tutorial</h2>
-                    <p class="text-secondary fw-semibold mb-3">Masih bingung dengan Array?</p>
-                    <p class="text-secondary leading-relaxed mb-0">
-                        Pelajari konsep dasar Array secara visual melalui video tutorial ini. Kamu akan melihat simulasi langsung bagaimana data ditambahkan, diakses, dan dihapus langkah demi langkah.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/4BrZI4T_Kak"
-                        title="YouTube video player"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+        <!-- Video Tutorial -->
+        <div class="min-vh-100 m-2 m-md-5 d-flex justify-content-center align-items-center">
+
+            <div class="card border-0 shadow-sm rounded-4 p-5 p-md-5 bg-white mt-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold text-dark mb-5">Video Tutorial</h2>
+                        <p class="text-gray fw-semibold mb-3">Masih bingung dengan Array?</p>
+                        <p class="text-gray leading-relaxed mb-0">
+                            Pelajari konsep dasar Array secara visual melalui video tutorial ini. Kamu akan melihat simulasi langsung bagaimana data ditambahkan, diakses, dan dihapus langkah demi langkah.
+                        </p>    
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="ratio ratio-16x9">
+                            <iframe
+    
+                                src="https://www.youtube.com/embed/4BrZI4T_Kak"
+                                title="YouTube video player"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </main> 
-    <!-- bagian footer -->
-    <footer class="text-white footer-bg text-center py-3 mt-4">
-        <p class="mb-0 small">©2026 Build with ♥ by MBG team</p>
-    </footer>
+
+
+        <!-- bagian footer -->
+        <footer class="text-white mt-5 mt-lg-0 footer-bg text-center py-3 align-items-center d-flex justify-content-center">
+            <p class="mb-0 small">©2026 Build with ♥ by MBG team</p>
+        </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
